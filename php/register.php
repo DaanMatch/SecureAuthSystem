@@ -2,7 +2,7 @@
 	require_once 'sendValidationEmail.php';
 	$errors = [];
 
-
+# '#(*UTF8)[[:alnum:]]#'
 	if(!isset($_POST['name']) || strlen($_POST['name']) > 255 || !preg_match('/^[a-zA-Z- ]+$/', $_POST['name'])) {
 		$errors[] = 1;
 	}
